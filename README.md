@@ -18,18 +18,14 @@ Supabase Account: You need an active account on Supabase.io.
 1.Clone the Repository
    Open your terminal and run the following command to clone the project repository:
 
-copy
-bash
-
-git clone https://github.com/your_username/project_name.git
+git clone https://github.com/Yousufalipangat/DayTask.git
 cd project_name
+
 2. Install Dependencies
    Run the following command to get the required dependencies with Flutter's package manager:
 
-copy
-bash
-
 flutter pub get
+
 3. Configure Supabase
    a. Create a New Project in Supabase
    Log in to your Supabase account.
@@ -59,11 +55,9 @@ You can also use a package like flutter_dotenv to manage your environment variab
 
 Add the flutter_dotenv dependency to pubspec.yaml:
 
-copy
-yaml
-
 dependencies:
 flutter_dotenv: ^5.0.2
+
 Create a .env file in the root of your Flutter project and add your Supabase details:
 
 copy
@@ -71,8 +65,6 @@ SUPABASE_URL=https://YOUR_SUPABASE_URL
 SUPABASE_ANON_KEY=YOUR_SUPABASE_ANON_KEY
 Load the environment variables at the start of your application:
 
-copy
-dart
 
 import 'package:flutter_dotenv/flutter_dotenv.dart';
 
@@ -83,8 +75,7 @@ runApp(MyApp());
 5. Run the Application
    To run the application, execute the following command in your terminal:
 
-copy
-bash
+
 
 flutter run
 This command will compile the Flutter app and launch it on the connected device or emulator.
